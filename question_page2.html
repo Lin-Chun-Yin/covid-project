@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/doodle/48/null/hospital-3.png"
+    />
+    <title>清冠一號資訊網｜Q&A問答區</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid align-items-center">
+          <a class="navbar-brand" href="./index.html" style="font-size: 1.75rem"
+            ><img src="https://img.icons8.com/doodle/48/null/hospital-3.png" />
+            清冠一號資訊網
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  ><i class="fa-solid fa-newspaper"></i> 首頁
+                </a>
+              </li>
+
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link" href="./knowledge.html"
+                  ><i class="fa-solid fa-book-open-reader"></i> 認識清冠一號</a
+                >
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active1" href="#"
+                  ><i class="fa-solid fa-chart-simple"></i> 民眾Q&A</a
+                >
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link" href="./search.html"
+                  ><i class="fa-solid fa-magnifying-glass"></i> 診所查詢</a
+                >
+              </li>
+              <!-- <li class="nav-item dropdown pe-lg-2">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="/search.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    ><i class="fa-solid fa-magnifying-glass"></i>
+                    診所查詢
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">北北基</a></li>
+                    <li><a class="dropdown-item" href="">桃竹苗</a></li>
+                    <li><a class="dropdown-item" href="">中彰投</a></li>
+                    <li><a class="dropdown-item" href="">雲嘉南</a></li>
+                    <li><a class="dropdown-item" href="">高屏</a></li>
+                    <li><a class="dropdown-item" href="">宜花東</a></li>
+                    <li><a class="dropdown-item" href="">離島</a></li>
+                  </ul>
+                </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="block6">
+        <div class="title">
+          <h2>民眾Q&A收錄集</h2>
+          <div class="title2">
+            <label for="searchBar">關鍵字</label>
+            <input id="searchBar" type="text" placeholder="關鍵字搜尋" />
+            <button>查詢 <i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <div class="inside">
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q1"
+              aria-expanded="false"
+              aria-controls="q1"
+            >
+              Q11: 服用清冠一號，出現了腹瀉，該如何處理？
+            </button>
+            <div class="collapse" id="q1">
+              <div class="card card-body p-4">
+                <br />
+                1.
+                若正在飲用水果、冷飲（如：冰牛奶、冰咖啡、冰紅茶）、冰品……等性質屬於寒涼的飲食，都需要先暫停。<br />
+                2. 以溫熱的開水或薑湯送服「清冠一號」，餐後服用。<br />
+                3. 服用完清冠一號，可以沖或泡個熱水澡，讓身體微微出汗。<br />
+                若經過以上作法，仍有腹瀉情況，請諮詢醫師。<br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q2"
+              aria-expanded="false"
+              aria-controls="q2"
+            >
+              Q12:
+              服用清冠一號為什麼不能喝冰飲（如：冰牛奶、冰咖啡、冰紅茶、冰綠茶......）、吃冰品或吃水果？
+            </button>
+            <div class="collapse" id="q2">
+              <div class="card card-body p-4">
+                <br />
+                冰飲、冰品與水果的性質，偏屬「寒」、「涼」（水果中，又以西瓜、香瓜、哈蜜瓜、火龍果、蕃茄最為寒涼）；平常無病狀態，水果對於平衡身體的代謝與免疫反應是有幫助的，水果也能使血管輕微收縮，減少充血與發炎；但是在感染的狀態（如新冠肺炎），應該確保血液循環順暢，讓血液循環能把藥物（清冠一號）順利地帶到感染部位，發揮對抗病毒的作用，所以需要暫停冰飲、冰品或寒性水果的攝取。若想吃一些較為中和性質的水果，可以選擇：木瓜、蘋果、葡萄、……等。可再諮詢醫師。<br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q3"
+              aria-expanded="false"
+              aria-controls="q3"
+            >
+              Q13: 「服用清冠一號可以吃薏仁紅豆湯嗎？
+            </button>
+            <div class="collapse" id="q3">
+              <div class="card card-body p-4">
+                <br />
+                未感染者，若需前往高風險區、或接觸已感染者，服用清冠一號的目的是減少病毒入侵細胞內，此時吃薏仁紅豆湯沒有問題；但如果是吃冰過的薏仁紅豆湯，會降低身體循環功能，需先放到常溫偏涼（不宜冰冷）再吃，且不宜過量，其他甜品（甜點、甜湯）的服用原則亦同。<br />2.
+                已感染者：不適宜吃甜品，這是因為感染之後，身體啟動發炎反應，腸胃功能會下降，比平時容易消化不良，此時吃甜品，會出現腹脹、痰多、胸悶、食慾減退等問題。<br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q4"
+              aria-expanded="false"
+              aria-controls="q4"
+            >
+              Q14: 服用清冠一號，可以吃冰糖燉雪梨嗎？
+            </button>
+            <div class="collapse" id="q4">
+              <div class="card card-body p-4">
+                <br />
+                不行；「冰糖燉雪梨」是屬於滋潤的食材，適用的時機是陰虛咳嗽（喉嚨乾、口乾、痰液黏稠的慢性咳嗽），做為日常保養；它並不適合在新冠病毒感染時期服用，特別是在急性感染時期。<br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q5"
+              aria-expanded="false"
+              aria-controls="q5"
+            >
+              Q15:
+              請問清冠一號很苦，女兒看網路說可以加入黑糖，這樣不會影響藥效嗎？
+            </button>
+            <div class="collapse" id="q5">
+              <div class="card card-body p-4">
+                <br />
+                可以的！ 以可以服用為目標
+                <br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q6"
+              aria-expanded="false"
+              aria-controls="q6"
+            >
+              Q16: 小孩子服用清冠一號的劑量?
+            </button>
+            <div class="collapse" id="q6">
+              <div class="card card-body p-4">
+                <br />
+                小孩子服用「清冠一號」的劑量，需「依體重調整」，調整原則如下：
+                <br />
+                一天3包，若以每包10公克計算<br />1. 10公斤—1/4劑量；<br />2.
+                20公斤—1/2劑量；<br />3. 30公斤—3/4劑量；<br />4.
+                40公斤以上—正常劑量。<br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q7"
+              aria-expanded="false"
+              aria-controls="q7"
+            >
+              Q17: 女生月經來，可以喝清冠一號嗎？
+            </button>
+            <div class="collapse" id="q7">
+              <div class="card card-body p-4">
+                <br />
+                可以；女生月經來時，身體會比較虛弱，若在喝清冠一號時，有腹瀉的情況，可以喝一點生薑紅糖湯；若痛經，可以在小腹加敷一個暖暖包。
+                <br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q8"
+              aria-expanded="false"
+              aria-controls="q8"
+            >
+              Q18: 懷孕或哺乳的階段，（準）媽媽也可以服用清冠一號嗎？
+            </button>
+            <div class="collapse" id="q8">
+              <div class="card card-body p-4">
+                <br />
+                可以；「清冠一號」的藥材，在典籍文獻中沒有對姙娠階段（對母體與胎兒）或哺乳階段（對母體與嬰兒）的藥物禁忌之相關記載，相當安全，因此懷孕或哺乳期的婦女，都可以服用。（需由醫師處方）
+                <br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q9"
+              aria-expanded="false"
+              aria-controls="q9"
+            >
+              Q19: 一位今年54歲、已有23年糖尿病史的患者，是否適合服用清冠一號？
+            </button>
+            <div class="collapse" id="q9">
+              <div class="card card-body p-4">
+                <br />
+                「清冠一號」的藥材對於慢性糖尿病患者並沒有服用禁忌，可以服用清冠一號。其他的慢性疾病，例如：高血壓、高血脂、高尿酸、甲狀腺疾病……等，亦同。若有特殊病況或用藥疑問，應再諮詢醫師。
+                <br /><br />
+              </div>
+            </div>
+          </div>
+          <div class="qaItem">
+            <button
+              class="btn mt-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#q10"
+              aria-expanded="false"
+              aria-controls="q10"
+            >
+              Q20: 洗腎的人可以服用清冠一號嗎？
+            </button>
+            <div class="collapse" id="q10">
+              <div class="card card-body p-4">
+                <br />
+                一般而言，規律洗腎的患者，身體狀況是穩定的；可由專業中醫師進行處方，給予清冠一號藥物進行治療。清冠一號的附帶效果，可以「提升肺功能」、並「改善肝、腎功能」。
+                <br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a
+                class="page-link"
+                href="./question_page1.html"
+                aria-label="Previous"
+              >
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="./question_page1.html">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link active" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="./question_page3.html">3</a>
+            </li>
+            <li class="page-item">
+              <a
+                class="page-link"
+                href="./question_page3.html"
+                aria-label="Next"
+              >
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container p-3">
+        <p class="footer-text">
+          Copyright © 2023 NRICM101 All Rights Reserved. <br />
+          資料來源：<a href="https://www.mohw.gov.tw/mp-1.html"
+            >衛生福利部網站</a
+          >、<a href="https://www.nricm.edu.tw/"
+            >衛生福利部國家中醫藥研究所網站</a
+          >
+        </p>
+        <ul class="footer-menu ms-auto me-5">
+          <li>
+            <a href="#"><i class="fas fa-globe-americas ms-4"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook ms-4"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram ms-4"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter ms-4"></i></a>
+          </li>
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+    </footer>
+    <!-- bootstrap -->
+    <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- my_script -->
+    <script src="./shadow.js"></script>
+  </body>
+</html>

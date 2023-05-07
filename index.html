@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/doodle/48/null/hospital-3.png"
+    />
+    <title>清冠一號資訊網｜首頁</title>
+  </head>
+  <body>
+    <header class="sticky-top header">
+      <!-- 使用bootstarp nav bar -->
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid align-items-center">
+          <a class="navbar-brand" href="#" style="font-size: 1.75rem"
+            ><img src="https://img.icons8.com/doodle/48/null/hospital-3.png" />
+            <!-- icon8 的icon -->
+            清冠一號資訊網
+          </a>
+          <!-- collapse 使用id去對應要收合的div -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link active1" aria-current="page" href="#"
+                  ><i class="fa-solid fa-newspaper"></i> 首頁
+                </a>
+              </li>
+
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link" href="./knowledge.html"
+                  ><i class="fa-solid fa-book-open-reader"></i> 認識清冠一號</a
+                >
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link" href="./question_page1.html"
+                  ><i class="fa-solid fa-chart-simple"></i> 民眾Q&A</a
+                >
+              </li>
+              <li class="nav-item pe-lg-2">
+                <a class="nav-link" href="./search.html"
+                  ><i class="fa-solid fa-magnifying-glass"></i> 診所查詢</a
+                >
+              </li>
+
+              <!-- 下面是dropdown list 原本要使用 -->
+              <!-- <li class="nav-item dropdown pe-lg-2">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/search.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><i class="fa-solid fa-magnifying-glass"></i>
+                  診所查詢
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">北北基</a></li>
+                  <li><a class="dropdown-item" href="">桃竹苗</a></li>
+                  <li><a class="dropdown-item" href="">中彰投</a></li>
+                  <li><a class="dropdown-item" href="">雲嘉南</a></li>
+                  <li><a class="dropdown-item" href="">高屏</a></li>
+                  <li><a class="dropdown-item" href="">宜花東</a></li>
+                  <li><a class="dropdown-item" href="">離島</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 輪播圖，因為響應式@media使用main標籤設定，輪播圖不想要一起更動，因此寫在外面 -->
+    <div id="block1" class="carousel slide block1" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./image/chinese_medicine_1.jpg"
+            class="d-block w-100"
+            alt="中藥示意圖1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./image/chinese_medicine_2.jpg"
+            class="d-block w-100"
+            alt="中藥示意圖2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./image/chinese_medicine_3.jpg"
+            class="d-block w-100"
+            alt="中藥示意圖3"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#block1"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#block1"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <!-- block3 是圈圈選單 -->
+      <section class="block3">
+        <div class="circles">
+          <div class="circle">
+            <a href="https://covid19.mohw.gov.tw/ch/mp-205.html">
+              <img
+                src="https://img.icons8.com/cute-clipart/64/null/coronavirus.png"
+              />
+              <p>衛福部covid19專區</p>
+            </a>
+          </div>
+          <div class="circle">
+            <a href="./search.html">
+              <img
+                src="https://img.icons8.com/plasticine/100/null/hospital.png"
+              />
+              <p>清冠一號診所查詢表</p>
+            </a>
+          </div>
+          <div class="circle">
+            <a href="./knowledge.html">
+              <img
+                src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Reading-reminder-and-to-do-bearicons-outline-color-bearicons.png"
+              />
+              <p>認識清冠一號</p>
+            </a>
+          </div>
+          <div class="circle">
+            <a href="./question_page1.html">
+              <img
+                src="https://img.icons8.com/external-nawicon-outline-color-nawicon/64/null/external-question-online-learning-nawicon-outline-color-nawicon.png"
+              />
+              <p>清冠一號Q&A問答區</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- block2 是新聞區 -->
+      <section class="block2">
+        <div class="inside">
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              清冠一號相關公告
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              新冠肺炎相關新聞
+            </button>
+
+            <!-- <button
+          class="nav-link"
+          id="nav-contact-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-contact"
+          type="button"
+          role="tab"
+          aria-controls="nav-contact"
+          aria-selected="false"
+        >
+          Contact
+        </button> -->
+          </div>
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active ms-3 me-3 pd-3"
+              id="nav-home"
+              role="tabpanel"
+              aria-labelledby="nav-home-tab"
+            >
+              <ul>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.nricm.edu.tw/p/406-1000-6773,r61.php?Lang=zh-tw"
+                    title="【置頂】「清冠一號動態表」公費清冠一號(供全台民眾查詢)"
+                    ><span>2022-05-23</span
+                    >【置頂】「清冠一號動態表」公費清冠一號(供全台民眾查詢)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.nricm.edu.tw/p/406-1000-6518,r61.php?Lang=zh-tw"
+                    title="【置頂】臺灣清冠一號民眾「Q&A問答區」"
+                    ><span>2021-05-27</span
+                    >【置頂】臺灣清冠一號民眾「Q&A問答區」</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.nricm.edu.tw/p/406-1000-6932,r61.php?Lang=zh-tw"
+                    title="【新聞】清冠一號對12種變種新冠病毒棘蛋白均有抑制ACE2結合作用"
+                    ><span>2023-01-21</span>
+                    【新聞】清冠一號對12種變種新冠病毒棘蛋白均有抑制ACE2結合作用</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.nricm.edu.tw/p/406-1000-6855,r61.php?Lang=zh-tw"
+                    title="【公告】臺灣清冠一號和清冠二號之安全性評估"
+                    ><span>2022-09-28</span>
+                    【公告】臺灣清冠一號和清冠二號之安全性評估</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.nricm.edu.tw/p/406-1000-6847,r61.php?Lang=zh-tw"
+                    title="【公告】「臺灣清冠二號」僅適用缺氧重症患者，未經中醫師診療，切勿自行購買藥材煎煮，以免傷身!"
+                    ><span>2022-09-13</span>
+                    【公告】「臺灣清冠二號」僅適用缺氧重症患者，未經中醫師診療，切勿自行購買藥材煎煮，以免傷身!</a
+                  >
+                </li>
+              </ul>
+              <div class="more d-flex justify-content-end">
+                <a href="#" class="btn sbtn"
+                  >更多相關公告 <i class="fa-solid fa-circle-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade ms-3 me-3"
+              id="nav-profile"
+              role="tabpanel"
+              aria-labelledby="nav-profile-tab"
+            >
+              <ul>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.mohw.gov.tw/cp-16-73580-1.html"
+                    title="【新聞】新增82例Omicron亞型變異株確定病例，分別為55例本土個案及27例境外移入"
+                    ><span>2023-02-13</span
+                    >【新聞】新增82例Omicron亞型變異株確定病例，分別為55例本土個案及27例境外移入
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.mohw.gov.tw/cp-16-73579-1.html"
+                    title="【新聞】新增12,657例COVID-19確定病例，分別為12,397例本土個案及260例境外移入"
+                    ><span>2023-02-13</span
+                    >【新聞】新增12,657例COVID-19確定病例，分別為12,397例本土個案及260例境外移入</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.mohw.gov.tw/cp-16-73575-1.html"
+                    title="【新聞】新增17,199例COVID-19確定病例，分別為16,902例本土個案及297例境外移入"
+                    ><span>2023-02-12</span>
+                    【新聞】新增17,199例COVID-19確定病例，分別為16,902例本土個案及297例境外移入
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.mohw.gov.tw/cp-16-73574-1.html"
+                    title="【新聞】新增18,300例COVID-19確定病例，分別為18,000例本土個案及300例境外移入
+                "
+                    ><span>2023-02-11</span>
+                    【新聞】新增18,300例COVID-19確定病例，分別為18,000例本土個案及300例境外移入
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-truncate"
+                    href="https://www.mohw.gov.tw/cp-6567-73569-1.html"
+                    title="【新聞】指揮中心啟動走訪22縣市，交流討論COVID-19疫苗接種提升策略及地方防疫經驗回饋
+                "
+                    ><span>2023-02-10</span>
+                    【新聞】指揮中心啟動走訪22縣市，交流討論COVID-19疫苗接種提升策略及地方防疫經驗回饋
+                  </a>
+                </li>
+              </ul>
+              <div class="more d-flex justify-content-end">
+                <a href="#" class="btn sbtn"
+                  >更多相關新聞 <i class="fa-solid fa-circle-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+            <!-- <div
+          class="tab-pane fade m-3"
+          id="nav-contact"
+          role="tabpanel"
+          aria-labelledby="nav-contact-tab"
+        >
+          ...
+        </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container p-3">
+        <p class="footer-text">
+          Copyright © 2023 NRICM101 All Rights Reserved. <br />
+          資料來源：<a href="https://www.mohw.gov.tw/mp-1.html"
+            >衛生福利部網站</a
+          >、<a href="https://www.nricm.edu.tw/"
+            >衛生福利部國家中醫藥研究所網站</a
+          >
+        </p>
+        <ul class="footer-menu ms-auto me-5">
+          <li>
+            <a href="#"><i class="fas fa-globe-americas ms-4"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-facebook ms-4"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram ms-4"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter ms-4"></i></a>
+          </li>
+          <div class="clearfix"></div>
+        </ul>
+      </div>
+    </footer>
+    <!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google Chart -->
+
+    <!-- my_script -->
+    <script src="./shadow.js"></script>
+  </body>
+</html>

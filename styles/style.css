@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  padding: 0px;
+}
+
+body header {
+  background-color: #337ab7;
+}
+body header nav.navbar div {
+  font-size: 1.1rem;
+}
+body header nav.navbar div a {
+  color: white;
+}
+body header nav.navbar div.collapse ul li a {
+  display: inline-block;
+}
+body header nav.navbar div.collapse ul li a:hover {
+  color: rgb(255, 244, 144);
+  border-bottom: 3px solid rgb(255, 244, 144);
+}
+body header nav.navbar div.collapse ul li a.active1 {
+  color: rgb(255, 244, 144);
+}
+body header section.forsearch {
+  background-color: #337ab7;
+}
+body header section.forsearch ul.nav {
+  justify-content: center;
+}
+body header section.forsearch ul.nav li {
+  font-size: 1.2rem;
+  color: white;
+}
+body header section.forsearch ul.nav li a {
+  color: white;
+}
+body div.block1 .carousel-inner img {
+  height: 250px;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main {
+  background-color: lightyellow;
+  box-shadow: 20px 0px 50px rgba(0, 0, 0, 0.1);
+}
+body main section.block2 {
+  padding: 3rem;
+}
+body main section.block2 div.inside {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+body main section.block2 div.inside div.nav button {
+  border-radius: 10px 10px 0 0;
+  color: #337ab7;
+}
+body main section.block2 div.inside div.nav button.active {
+  color: white;
+  background-color: #337ab7;
+}
+body main section.block2 div.inside div.tab-content div.tab-pane ul li {
+  padding: 0.7rem 0 0.5rem;
+  border-bottom: 1px solid lightgray;
+}
+body main section.block2 div.inside div.tab-content div.tab-pane ul li:hover {
+  background-color: rgb(234, 234, 234);
+}
+body main section.block2 div.inside div.tab-content div.tab-pane ul li a {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+body main section.block2 div.inside div.tab-content div.tab-pane ul li a:hover {
+  color: red;
+}
+body main section.block2 div.inside div.tab-content div.tab-pane ul li span {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #337ab7;
+}
+body main section.block3 {
+  padding-top: 3rem;
+}
+body main section.block3 div.circles {
+  background-color: lightcyan;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 15px;
+  margin: 0 3rem;
+}
+body main section.block3 div.circle {
+  padding: 1rem;
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+body main section.block3 div.circle a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.block3 div.circle a img {
+  width: 100px;
+  border-radius: 50%;
+  transition: all 0.1 ease;
+}
+body main section.block3 div.circle a img:hover {
+  padding: 0.3rem;
+  border: 3px solid rgba(51, 122, 183, 0.7);
+}
+body main section.block4 div.title {
+  padding-top: 2rem;
+}
+body main section.block4 div.title h1 {
+  margin-bottom: 0;
+  text-align: center;
+  background-color: #337ab7;
+  border-radius: 15px;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+body main section.block4 div.inside {
+  max-height: 40vh;
+  overflow: auto;
+}
+body main section.block4 div.inside div.timeline {
+  padding-left: 3rem;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) inset;
+}
+body main section.block4 div.inside div.timeline div.timeline-item {
+  padding: 2.5rem 1.5rem 1.5rem;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid #337ab7;
+  line-height: 1.5;
+}
+body main section.block4 div.inside div.timeline div.timeline-item h1 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+body main section.block4 div.inside div.timeline div.timeline-item div.content {
+  font-size: 1rem;
+}
+body main section.block4 div.inside div.timeline div.timeline-item div.content ol li {
+  list-style-type: decimal;
+  color: rgba(0, 0, 0, 0.7);
+}
+body main section.block4 div.inside div.timeline div.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 1.5rem;
+  top: 1rem;
+  font-weight: bold;
+  display: block;
+  font-size: 0.9rem;
+  color: #337ab7;
+}
+body main section.block4 div.inside div.timeline div.timeline-item::after {
+  width: 15px;
+  height: 15px;
+  display: block;
+  top: 1.2rem;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: "";
+  border: 3px solid #337ab7;
+  background-color: white;
+}
+body main section.block5 div.title {
+  margin-top: 2rem;
+}
+body main section.block5 div.title h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: #337ab7;
+  color: white;
+  border-radius: 15px;
+  padding: 0.5rem 3rem;
+}
+body main section.block5 div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.block5 div.circles div.circle {
+  text-align: center;
+  padding: 1rem;
+}
+body main section.block5 div.circles div.circle img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+body main section.block5 div.circles div.circle img:hover {
+  background-color: white;
+  padding: 5px;
+  border: 3px solid #337ab7;
+}
+body main section.block5 div.circles div.circle p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+body main section.block6 {
+  padding: 1rem 3rem 2rem 3rem;
+  box-shadow: 20px 0px 50px rgba(0, 0, 0, 0.1);
+}
+body main section.block6 div.title {
+  padding-top: 0.5rem;
+  border-top: 3px solid #337ab7;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.7);
+  padding-bottom: 0.8rem;
+}
+body main section.block6 div.title h2 {
+  padding-bottom: 0.5rem;
+}
+body main section.block6 div.title div.title2 label {
+  padding-right: 0.5rem;
+}
+body main section.block6 div.title div.title2 input {
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: 1px solid gray;
+  margin: 0.3rem 0rem 0.3rem 0rem;
+}
+body main section.block6 div.title div.title2 button {
+  border-radius: 5px;
+  padding: 5px 20px;
+  border: 1px solid gray;
+  background-color: white;
+  color: #337ab7;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+body main section.block6 div.inside {
+  transition: none;
+}
+body main section.block6 div.inside button {
+  width: 100%;
+  background-color: rgba(224, 255, 255, 0.8);
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #494949;
+  text-align: start;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: nowrap;
+}
+body main section.block6 div.inside button:focus {
+  color: white;
+  background-color: #337ab7;
+}
+body main section.block6 div.inside button span.right {
+  float: right;
+}
+body main section.block6 div.inside div.collapse {
+  background-color: rgb(239, 239, 239);
+}
+body main section.block6 nav {
+  margin-top: 2rem;
+}
+body main section.block6 nav ul li a {
+  color: #337ab7;
+}
+body main section.block6 nav ul li a:active {
+  background-color: #337ab7;
+}
+body main section.block7 {
+  padding: 1rem 3rem 2rem 3rem;
+  max-height: 1000px;
+  overflow: auto;
+  box-shadow: 20px 0px 50px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+body main section.block7 div.title {
+  padding: 0.8rem 0 0.8rem 0;
+  border-top: 3px solid #337ab7;
+}
+body main section.block7 div.title h2 {
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+}
+body main section.block7 div.title form label {
+  padding-right: 0.5rem;
+}
+body main section.block7 div.title form span {
+  padding: 0 0.5rem 0 0.5rem;
+}
+body main section.block7 div.title form select {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+body main section.block7 div.title2 {
+  padding: 0.8rem 0 0.8rem 0;
+  border-top: 3px solid #337ab7;
+}
+body main section.block7 div.title2 h2 {
+  font-size: 2rem;
+}
+body main section.block7 div.firstOne {
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+  min-width: 250px;
+}
+body main section.block7 div.firstOne div.accordion div.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+body main section.block7 div.firstOne div.accordion div.accordion-item button {
+  background-color: rgba(224, 255, 255, 0.8);
+  font-weight: 700;
+  color: #494949;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+body main section.block7 div.firstOne div.accordion div.accordion-item button:focus {
+  color: white;
+  background-color: #337ab7;
+}
+body main section.block7 div.firstOne div.accordion iframe {
+  width: 100%;
+}
+body main section.block7 div.inside div.hospitalList {
+  margin: 0.5rem;
+  min-width: 250px;
+}
+body main section.block7 div.inside div.hospitalList div.accordion div.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+}
+body main section.block7 div.inside div.hospitalList div.accordion div.accordion-item button {
+  background-color: rgba(224, 255, 255, 0.8);
+  font-weight: 700;
+  color: #494949;
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+body main section.block7 div.inside div.hospitalList div.accordion div.accordion-item button:focus {
+  color: white;
+  background-color: #337ab7;
+}
+body main section.block7 div.inside div.hospitalList div.accordion iframe {
+  width: 100%;
+}
+
+footer {
+  background-color: #494949;
+  min-height: 10vh;
+}
+footer .container {
+  background-color: #494949;
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .container p.footer-text {
+  flex: 3 1 250px;
+  float: left;
+  color: white;
+}
+footer .container p.footer-text a {
+  color: white;
+}
+footer .container p.footer-text a:hover {
+  color: #337ab7;
+}
+footer .container ul.footer-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex: 1 1 100px;
+  justify-content: flex-end;
+}
+footer .container ul.footer-menu a {
+  font-size: 1.5rem;
+  color: white;
+}
+footer .container ul.footer-menu a:hover {
+  color: #337ab7;
+}
+
+.sbtn {
+  background-color: white;
+  color: #337ab7;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.sbtn:hover {
+  background-color: #337ab7;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

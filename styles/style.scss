@@ -1,0 +1,584 @@
+$themeColor: #337ab7;
+$secondColor: lightcyan;
+$footerColor: #494949;
+$otherColor: lightcyan;
+$backColor: lightyellow;
+$border-color: rgba(black, 0.3);
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all ease 0.2s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  padding: 0px;
+}
+// a {
+//   text-decoration: none;
+//   // color: white;
+// }
+
+body {
+  // background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/paper_2.png");
+  header {
+    background-color: $themeColor;
+    nav.navbar {
+      div {
+        font-size: 1.1rem;
+        a {
+          color: white;
+        }
+      }
+      div.collapse {
+        ul {
+          li {
+            a {
+              display: inline-block;
+              &:hover {
+                color: rgb(255, 244, 144);
+                // color: $themeColor;
+                border-bottom: 3px solid rgb(255, 244, 144);
+              }
+              &.active1 {
+                color: rgb(255, 244, 144);
+                // color: $themeColor;
+              }
+            }
+          }
+        }
+      }
+    }
+    section.forsearch {
+      background-color: $themeColor;
+      ul.nav {
+        justify-content: center;
+        li {
+          // margin-left: 2rem;
+          // margin-right: auto;
+          font-size: 1.2rem;
+          color: white;
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  // background-color: lemonchiffon;
+
+  //block1 首頁>輪播圖
+  div.block1 {
+    .carousel-inner {
+      img {
+        height: 250px;
+        overflow: hidden;
+        object-fit: cover;
+        // border: 1px solid red;
+      }
+      // width: 100%;
+      // height: 200px;
+    }
+  }
+  main {
+    background-color: rgba($backColor, 1);
+    // background-color: white;
+    // background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/witewall_3.png");
+    // background-color: white;
+    box-shadow: 20px 0px 50px rgba(black, 0.1);
+
+    // border: 1px red solid;
+    //block2 首頁>新聞板塊
+    section.block2 {
+      padding: 3rem;
+      div.inside {
+        // border: 1px solid red;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 5px 5px 5px rgba(black, 0.1);
+
+        div.nav {
+          button {
+            border-radius: 10px 10px 0 0;
+            color: $themeColor;
+            // font-size: 1.15rem;
+            &.active {
+              color: white;
+              background-color: $themeColor;
+            }
+          }
+        }
+        div.tab-content {
+          div.tab-pane {
+            // border: 1px solid red;
+            ul {
+              li {
+                // font-size: 1.1rem;
+                padding: 0.7rem 0 0.5rem;
+                border-bottom: 1px solid lightgray;
+                &:hover {
+                  background-color: rgb(234, 234, 234);
+                }
+                a {
+                  max-width: 100%;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  display: block;
+                  &:hover {
+                    color: red;
+                  }
+                }
+                span {
+                  display: inline-block;
+                  padding-right: 0.5rem;
+                  color: $themeColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //block3 首頁>圈圈選單
+    section.block3 {
+      // background-color: white;
+      padding-top: 3rem;
+      // border: 1px solid red;
+      div.circles {
+        background-color: $secondColor;
+        font-size: 1.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 15px;
+        margin: 0 3rem;
+      }
+      div.circle {
+        // border: 1px solid green;
+        padding: 1rem;
+        flex: 0 1 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 100px;
+            border-radius: 50%;
+            transition: all 0.1 ease;
+            &:hover {
+              padding: 0.3rem;
+              // background-color: white;
+              border: 3px solid rgba($themeColor, 0.7);
+            }
+          }
+        }
+      }
+    }
+
+    //block4 認識清冠一號>TimeLine
+    section.block4 {
+      // border: 1px solid orangered;
+      div.title {
+        padding-top: 2rem;
+        h1 {
+          margin-bottom: 0;
+          text-align: center;
+          background-color: $themeColor;
+          border-radius: 15px;
+          padding: 0.5rem 3rem;
+          color: white;
+        }
+      }
+      div.inside {
+        // padding-left: 4rem;
+        // padding-right: 4rem;
+
+        // border: 1px solid red;
+        max-height: 40vh;
+        overflow: auto;
+        div.timeline {
+          padding-left: 3rem;
+          // border: 1px solid green;
+          background-color: white;
+          box-shadow: 0 10px 20px rgba(black, 0.1) inset;
+          div.timeline-item {
+            padding: 2.5rem 1.5rem 1.5rem;
+            position: relative;
+            color: rgba(black, 0.7);
+            border-left: 2px solid $themeColor;
+            line-height: 1.5;
+            h1 {
+              font-size: 1.25rem;
+              margin-bottom: 0.5rem;
+              font-weight: 500;
+            }
+            div.content {
+              font-size: 1rem;
+              ol {
+                li {
+                  list-style-type: decimal;
+                  color: rgba(black, 0.7);
+                }
+              }
+            }
+            &::before {
+              content: attr(date-is);
+              position: absolute;
+              left: 1.5rem;
+              top: 1rem;
+              font-weight: bold;
+              display: block;
+              font-size: 0.9rem;
+              // font-family: "Roboto", sans-serif;
+              color: $themeColor;
+            }
+            &::after {
+              width: 15px;
+              height: 15px;
+              display: block;
+              top: 1.2rem;
+              position: absolute;
+              left: -7px;
+              border-radius: 10px;
+              content: "";
+              border: 3px solid $themeColor;
+              background-color: white;
+            }
+            &:last-child {
+              border-image: linear-gradient(
+                  to bottom,
+                  $themeColor 60%,
+                  rgba($themeColor, 0)
+                )
+                1 100%;
+            }
+          }
+        }
+      }
+    }
+
+    //block5 認識清冠一號>中藥圈圈
+    section.block5 {
+      // border: 1px solid orangered;
+
+      div.title {
+        // margin-left: 5rem;
+        // margin-right: 5rem;
+        margin-top: 2rem;
+        h1 {
+          margin-bottom: 1rem;
+          text-align: center;
+          background-color: $themeColor;
+          color: white;
+          border-radius: 15px;
+          padding: 0.5rem 3rem;
+        }
+      }
+
+      div.circles {
+        display: flex;
+        flex-wrap: wrap;
+        // border: 1px solid green;
+        justify-content: center;
+        // padding: 0 3rem;
+        div.circle {
+          text-align: center;
+          padding: 1rem;
+          img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            &:hover {
+              background-color: white;
+              padding: 5px;
+              border: 3px solid $themeColor;
+            }
+          }
+          p {
+            font-size: 1.1rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    //block6 QnA區
+    section.block6 {
+      padding: 1rem 3rem 2rem 3rem;
+      // background-color: rgba(white, 0.3);
+      box-shadow: 20px 0px 50px rgba(black, 0.1);
+
+      // border: 1px red solid;
+      div.title {
+        padding-top: 0.5rem;
+        border-top: 3px solid $themeColor;
+        border-bottom: 2px solid rgba(lightgray, 0.7);
+        padding-bottom: 0.8rem;
+        h2 {
+          padding-bottom: 0.5rem;
+        }
+        div.title2 {
+          // width: 95%;
+          label {
+            padding-right: 0.5rem;
+          }
+          input {
+            border-radius: 5px;
+            padding: 5px 15px;
+            border: 1px solid gray;
+            margin: 0.3rem 0rem 0.3rem 0rem;
+          }
+          button {
+            border-radius: 5px;
+            padding: 5px 20px;
+            border: 1px solid gray;
+            background-color: white;
+            color: $themeColor;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+          }
+        }
+      }
+      div.inside {
+        button {
+          width: 100%;
+          background-color: rgba(lightcyan, 0.8);
+          padding: 1rem;
+          font-size: 1rem;
+          font-weight: 700;
+          color: $footerColor;
+          text-align: start;
+          box-shadow: 3px 0px 10px rgba(black, 0.3);
+          // &:active {
+          //   color: white;
+          //   background-color: $themeColor;
+          // }
+
+          &:focus {
+            color: white;
+            background-color: $themeColor;
+          }
+          display: flex;
+          flex-wrap: nowrap;
+          span.right {
+            float: right;
+          }
+        }
+        transition: none;
+        div.collapse {
+          // padding: 1.5rem;
+          background-color: rgb(239, 239, 239);
+          // div.card {
+          //   // border-radius: 0px;
+          // }
+        }
+      }
+      nav {
+        margin-top: 2rem;
+        ul {
+          li {
+            a {
+              color: $themeColor;
+              &:active {
+                background-color: $themeColor;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //block7 地圖區
+    section.block7 {
+      padding: 1rem 3rem 2rem 3rem;
+      max-height: 1000px;
+      overflow: auto;
+      // display: flex;
+      // flex-wrap: wrap;
+      // flex-direction: column;
+      // justify-content: center;
+      // align-items: center;
+      // background-color: white;
+      box-shadow: 20px 0px 50px rgba(black, 0.1);
+      height: auto;
+      // border: 1px solid red;
+      div.title {
+        padding: 0.8rem 0 0.8rem 0;
+        border-top: 3px solid $themeColor;
+        // border-bottom: 2px solid rgba(lightgray, 0.7);
+        h2 {
+          padding-bottom: 0.5rem;
+          font-size: 2rem;
+        }
+        form {
+          label {
+            padding-right: 0.5rem;
+          }
+          span {
+            padding: 0 0.5rem 0 0.5rem;
+          }
+          select {
+            padding: 0.5rem;
+            border-radius: 10px;
+          }
+        }
+      }
+      div.title2 {
+        padding: 0.8rem 0 0.8rem 0;
+        border-top: 3px solid $themeColor;
+        // border-bottom: 2px solid rgba(lightgray, 0.7);
+        h2 {
+          // padding-bottom: 0.5rem;
+          font-size: 2rem;
+        }
+      }
+      div.firstOne {
+        margin: 0.5rem;
+        padding: 0.5rem 0;
+        min-width: 250px;
+        // border-bottom: 2px solid rgba(lightgray, 0.7);
+        div.accordion {
+          div.accordion-item {
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            border: 1px solid lightgrey;
+            button {
+              background-color: rgba(lightcyan, 0.8);
+              font-weight: 700;
+              color: $footerColor;
+              box-shadow: 3px 0px 10px rgba(black, 0.3);
+
+              border-radius: 10px;
+              &:focus {
+                color: white;
+                background-color: $themeColor;
+              }
+            }
+          }
+
+          iframe {
+            width: 100%;
+          }
+        }
+      }
+      div.inside {
+        // border: 1px solid red;
+        // padding-top: 1rem;
+        // margin-left: 2.5rem;
+        div.hospitalList {
+          margin: 0.5rem;
+          min-width: 250px;
+          // border: 1px solid green;
+          div.accordion {
+            div.accordion-item {
+              margin-bottom: 1rem;
+              border-radius: 10px;
+              border: 1px solid lightgrey;
+              button {
+                background-color: rgba(lightcyan, 0.8);
+                font-weight: 700;
+                color: $footerColor;
+                box-shadow: 3px 0px 10px rgba(black, 0.3);
+
+                border-radius: 10px;
+                &:focus {
+                  color: white;
+                  background-color: $themeColor;
+                }
+              }
+            }
+
+            iframe {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  // padding: 2.5rem;
+  background-color: $footerColor;
+  min-height: 10vh;
+  .container {
+    background-color: $footerColor;
+    // border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    p.footer-text {
+      flex: 3 1 250px;
+      float: left;
+      color: white;
+      a {
+        color: white;
+        &:hover {
+          color: $themeColor;
+        }
+      }
+    }
+    ul.footer-menu {
+      // border: 1px solid gray;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      flex: 1 1 100px;
+      // float: right;
+      justify-content: flex-end;
+      a {
+        // width: 40px;
+        font-size: 1.5rem;
+        color: white;
+        &:hover {
+          color: $themeColor;
+        }
+      }
+    }
+  }
+}
+.sbtn {
+  //更多新聞
+  background-color: white;
+  color: $themeColor;
+  border-radius: 15px;
+  font-size: 0.5rem;
+  margin-bottom: 0.5rem;
+  &:hover {
+    background-color: $themeColor;
+    color: white;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    max-width: 1000px;
+    // display: flex;
+    // flex-direction: column;
+
+    margin-right: auto;
+    margin-left: auto;
+    // background-color: antiquewhite;
+  }
+}
